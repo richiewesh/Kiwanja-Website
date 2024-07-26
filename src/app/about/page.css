@@ -1,0 +1,24 @@
+  /* Create two unequal columns that floats next to each other */
+.story {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    margin-left: 30px;
+    margin-top: 150px;
+  }
+  
+  .left {
+    width: 35%;
+  }
+  
+  .right {
+    width: 55%;
+    margin-left: 60px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
